@@ -22,11 +22,15 @@
 var quest = [
     "What is pseudo-code?",
     "Why is a commit message useful?",
-    "What is a repository",
+    "What is a repository?",
     "Which of these headers is the smallest?",
     "Bootstrap was developed by which company?",
     "ul stands for which of the following?"
 ];
+
+
+
+
 
 
 // set up for loop to cycle through each question
@@ -40,6 +44,8 @@ var quest = [
 // tally up number of correct answers
 
 // create a 60 second timer to countdown to 0
+
+
 
 // button with event listener to start the game
 
