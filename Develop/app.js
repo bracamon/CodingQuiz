@@ -16,7 +16,18 @@
 // 16. repeat steps 1-15 for next participant
 // 17. click button to clear data and wipe slate
 
+
+
 // create 30 questions with 4 possible answers for each one
+var quest = [
+    "What is pseudo-code?",
+    "Why is a commit message useful?",
+    "What is a repository",
+    "Which of these headers is the smallest?",
+    "Bootstrap was developed by which company?",
+    "ul stands for which of the following?"
+];
+
 
 // set up for loop to cycle through each question
 
