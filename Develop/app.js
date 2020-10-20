@@ -8,7 +8,7 @@
 // 8. new question is displayed
 // 9. steps 6-8 repeat
 // 10. answer last question
-// 11. timer is as 0
+// 11. timer is at 0
 // 12. total score is displayed
 // 13. under total score a textbox to enter initials
 // 14. enter initials and click button to submit
@@ -31,8 +31,6 @@ var quest = [
 
 
 
-
-
 // set up for loop to cycle through each question
 
 // set up valueTrue for each answer
@@ -44,7 +42,12 @@ var quest = [
 // tally up number of correct answers
 
 // create a 60 second timer to countdown to 0
-
+var seconds = document.getElementById("countdown").textContent;
+var countdown = setInterval(function() {
+    seconds--;
+    document.getElementById("countdown").textContent = seconds;
+    if (seconds <= 0) clearInterval(countdown);
+}, 1000);
 
 
 // button with event listener to start the game
@@ -56,7 +59,7 @@ startBtn.addEventListener("click", function() {
 });
 
 clearBtn.addEventListener("click", function() {
-    alert("Goodbye World!")
+    alert("Starting from scratch!")
 });
 
 // buttons with event listeners for each of the answer options
