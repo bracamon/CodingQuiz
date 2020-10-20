@@ -42,12 +42,7 @@ var quest = [
 // tally up number of correct answers
 
 // create a 60 second timer to countdown to 0
-var seconds = document.getElementById("countdown").textContent;
-var countdown = setInterval(function() {
-    seconds--;
-    document.getElementById("countdown").textContent = seconds;
-    if (seconds <= 0) clearInterval(countdown);
-}, 1000);
+    // combined timer with start button click
 
 
 // button with event listener to start the game
@@ -55,8 +50,14 @@ var startBtn = document.getElementById("startBtn");
 var clearBtn = document.getElementById("clearBtn");
 
 startBtn.addEventListener("click", function() {
-    alert("Hello World!")
+    var seconds = document.getElementById("countdown").textContent;
+    var countdown = setInterval(function() {
+    seconds--;
+    document.getElementById("countdown").textContent = seconds;
+    if (seconds <= 0) clearInterval(countdown);
+}, 1000);
 });
+
 
 clearBtn.addEventListener("click", function() {
     alert("Starting from scratch!")
@@ -68,6 +69,3 @@ clearBtn.addEventListener("click", function() {
 // display initials next to total score
 
 // bonus - display performance by topic to convey areas that need improvement
-
-
-
