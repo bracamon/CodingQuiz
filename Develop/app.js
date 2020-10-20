@@ -48,6 +48,16 @@ var quest = [
 
 
 // button with event listener to start the game
+var startBtn = document.getElementById("startBtn");
+var clearBtn = document.getElementById("clearBtn");
+
+startBtn.addEventListener("click", function() {
+    alert("Hello World!")
+});
+
+clearBtn.addEventListener("click", function() {
+    alert("Goodbye World!")
+});
 
 // buttons with event listeners for each of the answer options
 
