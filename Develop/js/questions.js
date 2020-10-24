@@ -26,6 +26,10 @@ var quest = [
     }
 ];
 
+for(var i = 0; i < quest.length; i++) {
+    
+}
+
 // "What is pseudo-code?",
 // "Why is a commit message useful?",
 // "What is a repository?",

@@ -7,3 +7,10 @@ var questionTitle = document.querySelector("#question-title");
 var choices = document.querySelector("#choices");
 var start = document.querySelector("#start-element");
 var score = document.querySelector("#score");
+
+function buildQuiz() {}
+function showResults() {}
+
+buildQuiz();
+
+recordScore.addEventListener("click", showResults);
