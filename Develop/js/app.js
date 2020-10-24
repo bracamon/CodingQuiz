@@ -29,8 +29,6 @@ var quest = [
 ];
 
 
-
-
 // set up for loop to cycle through each question
 
 // set up valueTrue for each answer
@@ -52,10 +50,10 @@ var clearBtn = document.getElementById("clearBtn");
 startBtn.addEventListener("click", function() {
     var seconds = document.getElementById("countdown").textContent;
     var countdown = setInterval(function() {
-    seconds--;
-    document.getElementById("countdown").textContent = seconds;
-    if (seconds <= 0) clearInterval(countdown);
-}, 1000);
+        seconds--;
+        document.getElementById("countdown").textContent = seconds;
+        if (seconds <= 0) clearInterval(countdown);
+    }, 1000);
 });
 
 
