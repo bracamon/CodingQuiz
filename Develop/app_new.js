@@ -60,16 +60,6 @@ var runningQuestion = 0;
 var count = 0;
 var score = 0;
 
-// render question
-function renderQuestion() {
-    var q = quest[runningQuestion];
-    questionTitle.innerHTML = "<p>"+ q.title +"</p>";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
-    choiceD.innerHTML = q.choiceD;
-}
-
 hidden.style.visibility = 'hidden';
 
 // start quiz
@@ -85,8 +75,17 @@ startBtn.addEventListener("click", function() {
     startBtn.style.visibility = 'hidden';
 
     renderQuestion();
-    renderQuestion();
 });
+
+// render question
+function renderQuestion() {
+    var q = quest[runningQuestion];
+    questionTitle.innerHTML = "<p>"+ q.title +"</p>";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
+}
 
 // render progress
 function renderProgress() {
@@ -96,7 +95,6 @@ function renderProgress() {
 }
 
 // check Answer
-
 function checkAnswer(answer) {
     if( answer == quest[runningQuestion].correct) {
         score++;
@@ -108,4 +106,11 @@ function checkAnswer(answer) {
         }   else {
             clearInterval(timer);
             }
+}
+
+
+
+// if answer is correct
+function answerCorrect() {
+
 }
