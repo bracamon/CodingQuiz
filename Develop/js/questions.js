@@ -5,7 +5,7 @@ var quest = [
         answer: "plain text"
     },
     {
-        title: "What is a string?",
+        title: "What is pseudo code",
         choices: ["1", "number" , "plain text", "a rope"],
         answer: "plain text"
     },
