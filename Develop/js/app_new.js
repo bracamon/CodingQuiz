@@ -12,44 +12,45 @@ var choiceD = document.getElementById("D");
 var start = document.querySelector("#start-element");
 var score = document.querySelector("#score");
 var hidden = document.querySelector(".hide");
+var progress = document.querySelector("#progress");
 
 // create questions
 var quest = [
     {
         title : "What is a string?",
-        choiceA : "1", 
-        choiceB:  "number" , 
-        choiceC : "plain text", 
-        choiceD : "piece of twine",
-        answer : "C"
+        choiceA : "A) 1", 
+        choiceB:  "B) number" , 
+        choiceC : "C) plain text", 
+        choiceD : "D) piece of twine",
+        correct : "C"
     },{
         title: "Inside which HTML element should JavaScript be referenced?",
-        choiceA : "<head>", 
-        choiceB : "<script>", 
-        choiceC : "<body>", 
-        choiceD : "<div>",
-        answer: "B"
+        choiceA : "A) head", 
+        choiceB : "B) script", 
+        choiceC : "C) body", 
+        choiceD : "D) div",
+        correct: "B"
     },{
         title: "Which of the following symbols precedes a comment?",
-        choiceA : "//", 
-        choiceB : "*/", 
-        choiceC : "**", 
-        choiceD : "\\",
-        answer: "A"
+        choiceA : "A) //", 
+        choiceB : "B) */", 
+        choiceC : "C) **", 
+        choiceD : "D) \\",
+        correct: "A"
     },{
         title: "arr.push('') performs which of the following?",
-        choiceA : "removes index value at end of array", 
-        choiceB : "adds index value at beginning of array", 
-        choiceC : "removes index value at beginning of array", 
-        choiceD : "adds index value at end of array",
-        answer: "D"
+        choiceA : "A) removes index value at end of array", 
+        choiceB : "B) adds index value at beginning of array", 
+        choiceC : "C) removes index value at beginning of array", 
+        choiceD : "D) adds index value at end of array",
+        correct: "D"
     },{
         title: "Bootstrap was developed by which company?",
-        choiceA : "Facebook", 
-        choiceB : "Levi's", 
-        choiceC : "Twitter", 
-        choiceD : "Apple",
-        answer: "Twitter"
+        choiceA : "A) Facebook", 
+        choiceB : "B) Levi's", 
+        choiceC : "C) Twitter", 
+        choiceD : "D) Apple",
+        correct: "Twitter"
     }
 ];
 
@@ -57,8 +58,9 @@ var quest = [
 var lastQuestion = quest.length - 1;
 var runningQuestion = 0;
 var count = 0;
+var score = 0;
 
-
+// render question
 function renderQuestion() {
     var q = quest[runningQuestion];
     questionTitle.innerHTML = "<p>"+ q.title +"</p>";
@@ -70,6 +72,7 @@ function renderQuestion() {
 
 hidden.style.visibility = 'hidden';
 
+// start quiz
 startBtn.addEventListener("click", function() {
     var seconds = 60
     var timer = setInterval(function() {
@@ -82,6 +85,27 @@ startBtn.addEventListener("click", function() {
     startBtn.style.visibility = 'hidden';
 
     renderQuestion();
+    renderQuestion();
 });
 
+// render progress
+function renderProgress() {
+    for(var qIndex = 0; qIndex <= lastQuestion; qIndex++) {
+        progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
+    }
+}
 
+// check Answer
+
+function checkAnswer(answer) {
+    if( answer == quest[runningQuestion].correct) {
+        score++;
+    } 
+        count = 0;
+        if(runningQuestion < lastQuestion) {
+            runningQuestion++;
+            renderQuestion();
+        }   else {
+            clearInterval(timer);
+            }
+}

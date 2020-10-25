@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./Develop/style.css">
     <title>Timed Quiz</title>
 </head>
@@ -11,6 +12,12 @@
     <!-- <div class="score">
         <span></span>
     </div> -->
+    <nav class="navbar navbar-expand-sm navbar-white bg-dark">
+        <div class="container">
+            <h3 id="countdown" class="hide">Time Left: <span id="timer"></span></h3>
+        </div>
+    </nav>
+
     <div class="wrapper">
 
         <div class="start" id="start-element">
@@ -19,8 +26,7 @@
         </div>
 
         <div id="questions" class="hide">
-            <h3 id="countdown">Time Left: <span id="timer"></span></h3>
-            <h2 id="question-title">Question</h2>
+            <h3 id="question-title" class="hide">Question</h3>
             <div id="choices">
                 <div class="choice" id="A" onclick="checkAnswer('A')"></div>
                 <div class="choice" id="B" onclick="checkAnswer('B')"></div>
@@ -28,7 +34,7 @@
                 <div class="choice" id="D" onclick="checkAnswer('D')"></div>
             </div>
         </div>
-
+        <div id="progress"></div>
         <div id="end-element" class="hide">
             <h2>You finished</h2>
             <p>Your score is <span id="score"></span>!</p>
