@@ -10,7 +10,7 @@ var quest = [
         answer: "plain text"
     },
     {
-        title: "Inside which HTML element should JavaScript be placed",
+        title: "Inside which HTML element should JavaScript be referenced?",
         choices: [
             "<head>", 
             "<script>" , 
@@ -51,13 +51,4 @@ var quest = [
     }
 ];
 
-for(var i = 0; i < quest.length; i++) {
-    
-}
 
-// "What is pseudo-code?",
-// "Why is a commit message useful?",
-// "What is a repository?",
-// "Which of these headers is the smallest?",
-// "Bootstrap was developed by which company?",
-// "ul stands for which of the following?"
