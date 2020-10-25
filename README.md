@@ -36,7 +36,7 @@ THEN I can save my initials and score
 ## Link to Deployed Application and Code Quiz Preview
 
 
-Link: 
+Link: https://bracamon.github.io/CodingQuiz/
 
 Preview:
 
