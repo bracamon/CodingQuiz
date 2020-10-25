@@ -13,18 +13,17 @@
     </div> -->
     <div class="wrapper">
         <div class="start" id="start-element">
-            <h1>coding quiz</h1>
-            <p>these are the rules</p>
+            <h1>Coding Quiz</h1>
             <button id="startBtn">Begin</button>
         </div>
-        <div id="questions" class="hide">
-            <h2 id="timer">--</h2>
+        <form id="questions" class="hide">
+            <h2>Time Left: <span id="timer"></span></h2>
             <h2 id="question-title"></h2>
             <div id="choices"></div>
-        </div>
+        </form>
         <div id="end-element" class="hide">
-            <h2>you finished</h2>
-            <p>your score is <span id="score"></span>!</p>
+            <h2>You finished</h2>
+            <p>Your score is <span id="score"></span>!</p>
             <form id="recordScore">
                 <label for="initials">Enter your initials to record score:</label>
                 <input type="text" id="initials">

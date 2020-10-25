@@ -19,6 +19,8 @@ startBtn.addEventListener("click", function() {
         if (seconds <= 0) clearInterval(timer);
     }, 1000);
     $("#timer").text(seconds);
+
+    
 });
 
 buildQuiz();
