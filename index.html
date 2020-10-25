@@ -15,17 +15,22 @@
 
         <div class="start" id="start-element">
             <h1>Coding Quiz</h1>
-            <button id="startBtn">Begin</button>
+            <button id="startBtn">Click to begin</button>
         </div>
 
         <div id="questions" class="hide">
-            <h2>Time Left: <span id="timer"></span></h2>
+            <h3 id="countdown">Time Left: <span id="timer"></span></h3>
             <h2 id="question-title">Question</h2>
-            <div id="choices"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
         </div>
 
         <div id="end-element" class="hide">
-            <h2 >You finished</h2>
+            <h2>You finished</h2>
             <p>Your score is <span id="score"></span>!</p>
             <form id="recordScore">
                 <label for="initials">Enter your initials to record score:</label>
@@ -48,7 +53,6 @@
     <button id="startBtn">Start Quiz</button>
     <button id="clearBtn">Clear Scores</button> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./Develop/js/questions.js"></script> 
     <script src="./Develop/js/app_new.js"></script>
     
 </body>

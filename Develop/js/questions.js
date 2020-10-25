@@ -1,52 +1,38 @@
 var quest = [
     {
-        title: "What is a string?",
-        choices: [
-            "1", 
-            "number" , 
-            "plain text", 
-            "a rope"
-        ],
-        answer: "plain text"
-    },
-    {
+        title : "What is a string?",
+        choiceA : "1", 
+        choiceB:  "number" , 
+        choiceC : "plain text", 
+        choiceD : "piece of twine",
+        answer : "C"
+    },{
         title: "Inside which HTML element should JavaScript be referenced?",
-        choices: [
-            "<head>", 
-            "<script>" , 
-            "<body>", 
-            "<div>"
-        ],
-        answer: "<script>"
-    },
-    {
+        choiceA : "<head>", 
+        choiceB : "<script>", 
+        choiceC : "<body>", 
+        choiceD : "<div>",
+        answer: "B"
+    },{
         title: "Which of the following symbols precedes a comment?",
-        choices: [
-            "//", 
-            "*/" , 
-            "**", 
-            "\\"
-        ],
-        answer: "//"
-    },
-    {
+        choiceA : "//", 
+        choiceB : "*/", 
+        choiceC : "**", 
+        choiceD : "\\",
+        answer: "A"
+    },{
         title: "arr.push('') performs which of the following?",
-        choices: [
-            "removes index value at end of array", 
-            "adds index value at beginning of array" , 
-            "removes index value at beginning of array", 
-            "adds index value at end of array"
-        ],
-        answer: "adds index value at end of array"
-    },
-    {
+        choiceA : "removes index value at end of array", 
+        choiceB : "adds index value at beginning of array", 
+        choiceC : "removes index value at beginning of array", 
+        choiceD : "adds index value at end of array",
+        answer: "D"
+    },{
         title: "Bootstrap was developed by which company?",
-        choices: [
-            "Facebook", 
-            "Levi's" , 
-            "Twitter", 
-            "Apple"
-        ],
+        choiceA : "Facebook", 
+        choiceB : "Levi's", 
+        choiceC : "Twitter", 
+        choiceD : "Apple",
         answer: "Twitter"
     }
 ];

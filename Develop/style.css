@@ -1,0 +1,46 @@
+body {
+    background-color: #F3FFFD;
+}
+
+.start {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#startBtn {
+    color: white;
+    border-color: lightcoral;
+    background-color: rgb(210, 210, 210);
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#countdown {
+    font-family: sans-serif;
+    color: lightgray;
+}
+
+#question-title {
+    font-family: sans-serif;
+}
+
+#choices {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    margin : 20px auto;
+    padding: 50px;
+    background-color: white;
+    width : 500px;
+    border-radius: 5px;
+    border-width: 1px;
+    border: dashed;
+    border-color: lightgrey;
+    position: relative;
+    vertical-align: middle;
+}
+
